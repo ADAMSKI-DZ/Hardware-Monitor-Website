@@ -265,7 +265,7 @@ footer a:hover {
         visibility: hidden;
     }
     to {
-        left: 0;
+        left: unset;
         opacity: 1;
         visibility: visible;
     }
