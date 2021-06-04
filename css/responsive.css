@@ -81,3 +81,13 @@
         width: 20%;
     }
 }
+
+@media screen and (max-height: 400px) {
+    .menu-phone li {
+        font-size: 1.5em;
+    }
+    .back-home {
+        top: 0.25em;
+        left: 0.25em;
+    }
+}
