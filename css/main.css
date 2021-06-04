@@ -233,7 +233,17 @@ footer a:hover {
 .back-home:hover {
     background: var(--second-color);
 }
-
+.menu-phone li {
+    color: #fff;
+    font-family: 'Poppins-Bold';
+    font-size: 2em;
+    padding: 0.3em;
+    border-bottom: 4px solid #fff0;
+    transition: all 0.3s;
+}
+.menu-phone li:hover {
+    letter-spacing: 2px;
+}
 
 /**Start animations*/
 @keyframes main-start {
