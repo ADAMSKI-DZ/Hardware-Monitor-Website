@@ -1,0 +1,61 @@
+.page-systemsupport {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--main-color);
+    border-radius: 2em;
+    overflow: hidden;
+    animation: systemsupport-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.page-systemsupport h1 {
+    color: #fff;
+    position: absolute;
+    top: 1em;
+    text-align: center;
+}
+.page-systemsupport h2 {
+    color: #fff;
+}
+.support-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.windows-support {
+    width: 40%;
+    height: 100%;
+    margin: 0em 1em 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.linux-support {
+    width: 40%;
+    height: 100%;
+    margin: 0em 1em 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.support-container img {
+    width: 50%;
+}
+@keyframes systemsupport-start {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 50%;
+    }
+}

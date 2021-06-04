@@ -1,0 +1,74 @@
+.page-download {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--main-color);
+    border-radius: 2em;
+    overflow: hidden;
+    animation: download-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.page-download h1 {
+    color: #fff;
+}
+.systems-download {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.windows {
+    width: 45%;
+    height: 65%;
+    float: right;
+    background: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5em;
+    border-radius: 1em;
+}
+.linux {
+    width: 45%;
+    height: 65%;
+    float: left;
+    background: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+.systems-download {
+    color: #fff;
+}
+.systems-download img {
+    width: 11rem;
+}
+.systems-download a {
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.systems-download a:hover {
+    color: #000;
+}
+
+
+@keyframes download-start {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 50%;
+    }
+}

@@ -1,0 +1,41 @@
+.page-moreinfo {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--main-color);
+    border-radius: 2em;
+    overflow: hidden;
+    animation: moreinfo-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.page-moreinfo h1 {
+    color: #fff;
+    position: absolute;
+    top: 1em;
+}
+.desc-container {
+    width: 50%;
+}
+.page-moreinfo p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Poppins-Medium";
+}
+
+
+
+@keyframes moreinfo-start {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 50%;
+    }
+}

@@ -1,0 +1,298 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Poppins";
+}
+.dark {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(0 0 0 / 89%) 0%, rgb(0 0 0 / 49%) 100%);     
+}
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../data/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav.nav-bar {
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9999;
+}
+.logo {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    left: -20%;
+    opacity: 0;
+    visibility: hidden;
+    animation: logo-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    animation-delay: 0.7s;
+}
+.logo img {
+    height: 100%;
+}
+.logo h2 {
+    color: #fff;
+    font-family: "Poppins-Bold";
+}
+.menu {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+    right: -20%;
+    opacity: 0;
+    visibility: hidden;
+    animation: menu-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    animation-delay: 0.7s;
+}
+.menu svg {
+    width: 80%;
+    height: 80%;
+}
+.menu:hover {
+    background: var(--main-color);
+}
+.page-home {
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    animation: main-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    opacity: 0;
+    visibility: hidden;
+}
+.page-home h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-family: "Poppins-Bold";
+}
+.buttons-container {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons-container button {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.2em;
+    background: var(--main-color);
+    border-radius: 5em;
+    color: #ffff;
+    cursor: pointer;
+    font-family: "Poppins-Medium";
+    border: 4px solid transparent;
+    transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.buttons-container button:hover {
+    background: transparent;
+    border: 4px solid var(--second-color);
+    color: var(--second-color);
+    font-family: "Poppins-Bold";
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    color: #fff;
+    font-family: 'Poppins-Medium';
+}
+footer a {
+    color: #fff;
+    font-family: 'Poppins-Medium';
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+footer a:hover {
+    color: var(--main-color);
+}
+.creator {
+    margin-left: 2em;
+    left: -20%;
+    animation: creator-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    animation-delay: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+.copyright {
+    margin-right: 2em;
+    right: -20%;
+    animation: copyright-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    animation-delay: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-phone {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background: linear-gradient(45deg, var(--main-color), var(--second-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    right: -100%;
+    transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.menu-phone.show {
+    right: 0;
+    display: none;
+}
+.menu-pc {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5em;
+    right: -50%;
+    top: 10%;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.menu-pc a {
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'Poppins-Medium';
+}
+.menu-pc li {
+    padding: 0em 0em 0.25em 0.25em;
+    margin: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    border-radius: 1em;
+}
+.menu-pc li:hover {
+    background: var(--second-color);
+}
+.menu-pc.show {
+    right: 10%;
+}
+.menu path {
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.menu.animate path {
+    transform: scale(1.7) translateY(5px) translateX(-5px);
+}
+.back-home img {
+    width: 100%;
+    height: 100%;
+}
+.back-home {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 1em;
+    left: 1em;
+    transition: all 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    border-radius: 50%;
+    z-index: 999;
+}
+.back-home:hover {
+    background: var(--second-color);
+}
+
+
+/**Start animations*/
+@keyframes main-start {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        top: 80%;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+    }
+}
+@keyframes logo-start {
+    from {
+        left: -20%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes menu-start {
+    from {
+        right: -20%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes creator-start {
+    from {
+        left: -20%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes copyright-start {
+    from {
+        right: -20%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
