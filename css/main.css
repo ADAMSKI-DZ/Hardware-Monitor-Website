@@ -18,10 +18,10 @@ body {
     background-size: cover;
     background-position: center;
 }
-nav.nav-bar {
+.nav-bar {
     position: fixed;
-    max-width: 100%;
     width: 100%;
+    top: 0;
     height: 5rem;
     display: flex;
     align-items: center;
