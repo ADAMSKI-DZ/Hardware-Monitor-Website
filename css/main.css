@@ -164,11 +164,11 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    right: -100%;
+    left: -100%;
     transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .menu-phone.show {
-    right: 0;
+    left: 0;
     display: none;
 }
 .menu-pc {
