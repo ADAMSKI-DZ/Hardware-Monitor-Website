@@ -34,6 +34,7 @@
     animation: logo-start 1s alternate forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
     position: relative;
     animation-delay: 0.7s;
+    float: left;
 }
 .logo img {
     height: 5rem;
@@ -260,7 +261,7 @@ footer a:hover {
         visibility: hidden;
     }
     to {
-        left: unset;
+        left: 0;
         opacity: 1;
         visibility: visible;
     }
