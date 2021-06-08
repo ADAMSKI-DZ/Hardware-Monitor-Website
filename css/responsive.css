@@ -105,4 +105,7 @@
     .page-download {
         width: 85%;
     }
+    .page-systemsupport h1 {
+        top: 4em;
+    }
 }
